@@ -20,8 +20,10 @@ EX10: Write a function to add a CSS class to every Amazon link
 EX11: Write a function to toggle a CSS class for all the images in the table; that class should set the visibility of the image
 EX12: Write a function to color the price of each product in a different one every time it's invoked
 <!DOCTYPE html> -->
-<html>
+<html lang="en">
 <head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Home Work</title>
 
 <style>
@@ -113,7 +115,8 @@ const changeBackColor = function() {
 changeBackColor()
 
 const changeAddresstoFake = function() {
- let document.getElementById("address").innerText = "225 Baker Street"
+ let address = document.getElementById("address")
+ address.innerText = "225 Baker Street";
 }
 changeAddresstoFake()
 
