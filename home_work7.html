@@ -47,12 +47,17 @@ footer {
     padding-left: 15px;
     padding-right: 15px;
 }
+
 </style>
 </head>
  <body>
-<div id="top navbar" class="navbar navbar-inverse">
-<div class= "container fluit">
-<h1 position= centre>  __YoubuY__ </h1>
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+    <h1 id="Logo">  __YoubuY__ </h1>
 <table class="ListOfProducts" width= 70% height=40%>
 <tr>
 <th>Title</th>
@@ -75,7 +80,7 @@ footer {
 </tr>
 <tr>
     <td> <a href="https://www.amazon.com/Natural-Individual-Bottles-Naturally-Filtered/dp/B00MWXJPA4/ref=sr_1_6?crid=295W1JN57Z82S&dchild=1&keywords=evian+water+24+pack&qid=1632837990&sprefix=Evian%2Caps%2C334&sr=8-6">Still Water</a></td>
-    <td> <img class="water" src="evian.jpg" alt="waterstill"width=90px height=90px</td>
+    <td> <img class="water" src="evian.jpg" alt="waterstill" width=90px height=90px</td>
     <td>Evian Natural Spring Water, Naturally Filtered Spring Water in Large Bottles, 33.81 Fl Oz (Pack of 12)</td>
     <td>$19.99</td>
 </tr>
@@ -84,24 +89,29 @@ footer {
     <td> <img class="icecream" src="oreo.jpg" alt="oreo ice cream" width=110px  </td>
     <td>Oreo Sandwich Cookie - Ice Cream Blueberry Flavor</td>
     <td>Free</td>
-</tr>
-    
+</tr>  
 </table>
 
-<form><textarea> </textarea> 
+<form> <textarea> </textarea> 
 <button type="Submit"> Submit </button>
 </form>
-
-
 </body>
 
 <script>
- document.getElementById(h1).innerHTML = "Shoppo Shopping"
+const changeNameofShop = function() {
+ document.getElementById("Logo").innerHTML = "Shoppo Shopping";
+  } //add function 
+
+const changeBackColor = function() {
+ document.querySelector("body").style.background-color = "green"; 
+ } //add function
+    
+ document.getElementById("address").innerText = "225 Baker Street"
 
 </script>
 
 <footer>
-<p> 
+<p id="address"> 
     1 Great Suffolk Street,
     London, England
     SE14AA,
