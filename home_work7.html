@@ -1,25 +1,24 @@
 <!--
 EX1: Add an h1 tag with the name of your shop
-
 EX2: Add a TABLE with the top 5 products of your shop
-
 EX3: Insert for each product an image, a title, a description and a price
-
 EX4: Add links to existing Amazon products for each item in the table
-
 EX5: Add a footer with the address and the name of your shop
-
 EX6: Add a message board where the user can type a message in it (no real posting/saving features required!)
  
 These additional exercises, from 7 to 12, should be written in JavaScript:
  
 EX7: Write a function to change the h1 text to something else
+
 EX8: Write a function to change the page background color
 EX9: Write a function to change the footer address with a fake one
+
 EX10: Write a function to add a CSS class to every Amazon link
 EX11: Write a function to toggle a CSS class for all the images in the table; that class should set the visibility of the image
-EX12: Write a function to color the price of each product in a different one every time it's invoked
-<!DOCTYPE html> -->
+
+EX12: Write a function to color the price of each product in a different one every time it's invoked -->
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
@@ -32,6 +31,9 @@ table, th, td {
 }
   body {
        background-color: white; }
+.gaingain{
+    font-size: 3em; 
+}
 
 footer {
 	position: fixed;
@@ -76,7 +78,8 @@ footer {
 </tr>
 <tr>
      <td> <a href="https://www.amazon.com/Premier-Protein-Clear-Drink-Peach/dp/B07VH5V2L1">Soft Drinks</a></td>
-    <td> <img class="drinks" src="driiinks.jpg" alt="drinks" width=90px height=90px</td>
+    <td> <img class="drinks" src="driiinks.jpg" alt="drinks" width=90px height=90px
+    </td>
     <td>Healthy drinks pack</td>
     <td>$30.72</td>
 </tr>
@@ -92,44 +95,15 @@ footer {
     <td>Oreo Sandwich Cookie - Ice Cream Blueberry Flavor</td>
     <td>Free</td>
 </tr>  
-</table>
+</table> 
 
 <form> <textarea> </textarea> 
 <button type="Submit"> Submit </button>
 </form>
-</body>
 
-<script>
-const changeNameofShop = function() {
-
- let log = document.getElementById("Logo") 
-  log.innerHTML = "Shoppo Shopping";
-  
-  }
-changeNameofShop()
-
-const changeBackColor = function() {
- let colorr = document.querySelector("body")
-  colorr.style.backgroundColor = "green"; 
- } 
-changeBackColor()
-
-const changeAddresstoFake = function() {
- let address = document.getElementById("address")
- address.innerText = "225 Baker Street";
-}
-changeAddresstoFake()
-
-const AffectToCSS = function () 
-{
-   let ccssColor = document.querySelectorAll("a")
-   ccssColor.
-    }
-
-</script>
 
 <footer>
-<p id="address"> 
+<p> 
     1 Great Suffolk Street,
     London, England
     SE14AA,
@@ -139,5 +113,38 @@ const AffectToCSS = function ()
 
 </footer>
 
+<script>
+const changeNameofShop = function() {
+    document.getElementById("Logo").innerHTML = "Shoppo Shopping";
+  }
+  changeNameofShop()
+
+const changeBackColor = function() {
+
+        document.querySelector("body").style.backgroundColor = "lightblue"; 
+ } 
+changeBackColor()
+
+    function changeAddresstoFake() {
+        document.querySelector('p').innerHTML = " 225 Baker Street"; }
+changeAddresstoFake()
+
+function addClassToLinks () {
+   let newVar =  document.querySelectorAll("a")
+        console.log(newVar)
+    for ( let i =0; i<newVar.length; i++)
+        {
+            newVar[i].classList.add("gaingain")
+        }
+
+}
+addClassToLinks()
+
+
+
+
+</script>
+
+</body>
 
 </html>
