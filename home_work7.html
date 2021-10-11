@@ -20,131 +20,153 @@ EX12: Write a function to color the price of each product in a different one eve
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Home Work</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Work</title>
 
-<style>
-table, th, td {
-  border: 1px solid black;
-}
-  body {
-       background-color: white; }
-.gaingain{
-    font-size: 3em; 
-}
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      body {
+        background-color: white;
+      }
+      .gaingain {
+        font-size: 3em;
+      }
 
-footer {
-	position: fixed;
-	width: 100%;
-	left: 0;
-	bottom: 0;
-	background-color: brown;
-	color: white;
-	text-align: center;
-}
-.container-fluid
- {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+      footer {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        background-color: brown;
+        color: white;
+        text-align: center;
+      }
+      .container-fluid {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+    <h1 id="Logo">__YoubuY__</h1>
+    <table class="ListOfProducts" width="70%" height="40%">
+      <tr>
+        <th>Title</th>
+        <th>Image</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://www.amazon.com/Dried-Fruit-Gift-Basket-Multi-Functional/dp/B07CHSN691/ref=sr_1_4?dchild=1&keywords=fruits&qid=1632837708&sr=8-4"
+            >Fruits
+          </a>
+        </td>
+        <td>
+          <img class="fruit" src="fruits1.jpg" alt="fruits" width=90px
+          height=90px
+        </td>
+        <td>
+          Dried Fruit Gift Basket – Healthy Gourmet Snack Box - Holiday Food
+          Tray - Variety Snacks - Great for Birthday, Sympathy, Easter, Mother’s
+          and Father’s Day, Christmas, or Corporate Tray - Bonnie Pop
+        </td>
+        <td>$65.00</td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://www.amazon.com/Premier-Protein-Clear-Drink-Peach/dp/B07VH5V2L1"
+            >Soft Drinks</a
+          >
+        </td>
+        <td>
+          <img class="drinks" src="driiinks.jpg" alt="drinks" width=90px
+          height=90px
+        </td>
+        <td>Healthy drinks pack</td>
+        <td>$30.72</td>
+      </tr>
+      <tr>
+        <td>
+          <a
+            href="https://www.amazon.com/Natural-Individual-Bottles-Naturally-Filtered/dp/B00MWXJPA4/ref=sr_1_6?crid=295W1JN57Z82S&dchild=1&keywords=evian+water+24+pack&qid=1632837990&sprefix=Evian%2Caps%2C334&sr=8-6"
+            >Still Water</a
+          >
+        </td>
+        <td>
+          <img class="water" src="evian.jpg" alt="waterstill" width=90px
+          height=90px
+        </td>
+        <td>
+          Evian Natural Spring Water, Naturally Filtered Spring Water in Large
+          Bottles, 33.81 Fl Oz (Pack of 12)
+        </td>
+        <td>$19.99</td>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://m.media-amazon.com/images/I/41WbBlMq97L._AC_.jpg"
+            >Ice Cream</a
+          >
+        </td>
+        <td>
+          <img class="icecream" src="oreo.jpg" alt="oreo ice cream" width=110px
+        </td>
+        <td>Oreo Sandwich Cookie - Ice Cream Blueberry Flavor</td>
+        <td>Free</td>
+      </tr>
+    </table>
 
-</style>
-</head>
- <body>
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-</div>
-    <h1 id="Logo">  __YoubuY__ </h1>
-<table class="ListOfProducts" width= 70% height=40%>
-<tr>
-<th>Title</th>
-<th>Image</th>
-<th>Description</th>
-<th>Price</th>
-</tr>
-<tr>
-    <td> <a href="https://www.amazon.com/Dried-Fruit-Gift-Basket-Multi-Functional/dp/B07CHSN691/ref=sr_1_4?dchild=1&keywords=fruits&qid=1632837708&sr=8-4">Fruits </a></td>
-    <td> 
-    <img class="fruit" src="fruits1.jpg" alt="fruits" width=90px height=90px</td>
-    <td>Dried Fruit Gift Basket – Healthy Gourmet Snack Box - Holiday Food Tray - Variety Snacks - Great for Birthday, Sympathy, Easter, Mother’s and Father’s Day, Christmas, or Corporate Tray - Bonnie Pop</td>
-    <td> $65.00</td>
-</tr>
-<tr>
-     <td> <a href="https://www.amazon.com/Premier-Protein-Clear-Drink-Peach/dp/B07VH5V2L1">Soft Drinks</a></td>
-    <td> <img class="drinks" src="driiinks.jpg" alt="drinks" width=90px height=90px
-    </td>
-    <td>Healthy drinks pack</td>
-    <td>$30.72</td>
-</tr>
-<tr>
-    <td> <a href="https://www.amazon.com/Natural-Individual-Bottles-Naturally-Filtered/dp/B00MWXJPA4/ref=sr_1_6?crid=295W1JN57Z82S&dchild=1&keywords=evian+water+24+pack&qid=1632837990&sprefix=Evian%2Caps%2C334&sr=8-6">Still Water</a></td>
-    <td> <img class="water" src="evian.jpg" alt="waterstill" width=90px height=90px</td>
-    <td>Evian Natural Spring Water, Naturally Filtered Spring Water in Large Bottles, 33.81 Fl Oz (Pack of 12)</td>
-    <td>$19.99</td>
-</tr>
-<tr>
-    <td><a href="https://m.media-amazon.com/images/I/41WbBlMq97L._AC_.jpg">Ice Cream</a></td>
-    <td> <img class="icecream" src="oreo.jpg" alt="oreo ice cream" width=110px  </td>
-    <td>Oreo Sandwich Cookie - Ice Cream Blueberry Flavor</td>
-    <td>Free</td>
-</tr>  
-</table> 
+    <form>
+      <textarea> </textarea>
+      <button type="Submit">Submit</button>
+    </form>
 
-<form> <textarea> </textarea> 
-<button type="Submit"> Submit </button>
-</form>
+    <footer>
+      <p>1 Great Suffolk Street, London, England SE14AA, The UK</p>
+      <p>Copyright&copy; 2021 The YoubuY ME Ltd</p>
+    </footer>
 
+    <script>
+      const changeNameofShop = function () {
+        document.getElementById("Logo").innerHTML = "Shoppo Shopping";
+      };
+      changeNameofShop();
 
-<footer>
-<p> 
-    1 Great Suffolk Street,
-    London, England
-    SE14AA,
-    The UK
-</p>
-<p> Copyright&copy; 2021 The YoubuY ME Ltd</p>
+      const changeBackColor = function () {
+        document.querySelector("body").style.backgroundColor = "lightblue";
+      };
+      changeBackColor();
 
-</footer>
+      function changeAddresstoFake() {
+        document.querySelector("p").innerHTML = " 225 Baker Street";
+      }
+      changeAddresstoFake();
 
-<script>
-const changeNameofShop = function() {
-    document.getElementById("Logo").innerHTML = "Shoppo Shopping";
-  }
-  changeNameofShop()
-
-const changeBackColor = function() {
-
-        document.querySelector("body").style.backgroundColor = "lightblue"; 
- } 
-changeBackColor()
-
-    function changeAddresstoFake() {
-        document.querySelector('p').innerHTML = " 225 Baker Street"; }
-changeAddresstoFake()
-
-function addClassToLinks () {
-   let newVar =  document.querySelectorAll("a")
-        console.log(newVar)
-    for ( let i =0; i<newVar.length; i++)
-        {
-            newVar[i].classList.add("gaingain")
+      function addClassToLinks() {
+        let newVar = document.querySelectorAll("a");
+        console.log(newVar);
+        for (let i = 0; i < newVar.length; i++) {
+          newVar[i].classList.add("gaingain");
         }
-
-}
-addClassToLinks()
-
-
-
-
-</script>
-
-</body>
-
+      }
+      addClassToLinks();
+    </script>
+  </body>
 </html>
